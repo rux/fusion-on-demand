@@ -1,0 +1,12 @@
+# Secrets
+*.pem
+secrets.auto.tfvars
+
+# Terraform working files. State can hold the Fusion password.
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+
+# Intellij
+.idea
