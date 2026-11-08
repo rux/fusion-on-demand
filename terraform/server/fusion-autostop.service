@@ -1,0 +1,6 @@
+[Unit]
+Description=Stop EC2 instance
+
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/shutdown -h now

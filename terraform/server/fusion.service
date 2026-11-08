@@ -1,0 +1,19 @@
+[Unit]
+Description=Fusion RSS Reader
+Wants=network-online.target
+After=network-online.target
+RequiresMountsFor=/var/lib/fusion
+
+[Service]
+Type=simple
+User=fusion
+Group=fusion
+WorkingDirectory=/var/lib/fusion
+EnvironmentFile=/etc/fusion.env
+ExecStart=/usr/local/bin/fusion
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=Stop EC2 after 90 minutes
+
+[Timer]
+OnBootSec=90min
+Unit=fusion-autostop.service
+
+[Install]
+WantedBy=timers.target

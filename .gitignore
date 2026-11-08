@@ -1,6 +1,7 @@
 # Secrets
 *.pem
 secrets.auto.tfvars
+backend.hcl
 
 # Terraform working files. State can hold the Fusion password.
 .terraform/

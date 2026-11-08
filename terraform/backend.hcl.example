@@ -1,0 +1,2 @@
+# Copy to backend.hcl and use your existing Terraform state bucket.
+bucket = "terraform-123456789012-eu-west-2-example"
